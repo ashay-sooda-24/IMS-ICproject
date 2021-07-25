@@ -190,7 +190,7 @@ app.post("/apply", (req, res) => {
             });
         } else {
           console.log('invalid user and password');
-          res.render("apply");
+          res.render("apply", {error: "Invalid username and password"});
           connection.end();
         }
       }

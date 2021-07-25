@@ -1,5 +1,11 @@
 <%- include('header'); -%>
 
+<% if(typeof error !== 'undefined'){ %>
+  <div class="alert alert-danger alert-dismissible fade show position-absolute w-100" role="alert" style="border: 2px solid rgb(146, 124, 124); z-index:99; margin-top: -2vh; ">
+    <strong>Invalid email</strong> Looks like your email Id and password is invalid
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div><% } %>
+
     <!-- ---------------Form------------------------------ -->
     <div class="container d-flex align-items-center justify-content-center" style="min-height: 85vh;  margin-top: 10vh;">
         <div class="card" id="formCard" style="width:100%;">
