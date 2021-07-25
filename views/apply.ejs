@@ -1,0 +1,105 @@
+<%- include('header'); -%>
+
+    <!-- ---------------Form------------------------------ -->
+    <div class="container d-flex align-items-center justify-content-center" style="min-height: 85vh;  margin-top: 10vh;">
+        <div class="card" id="formCard" style="width:100%;">
+            <div class="card-header text-center">
+              <h2>Application Form </h2>
+            </div>
+            <div class="card-body">
+                <form class="" action="apply" method="POST">
+                    <!-- ----name- -->
+                    <div class="row mb-3">
+                      <label for="name" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input name="name" type="text" class="w-100 h-100 p-2"  placeholder="Enter your name" required>
+                      </div>
+                    </div>
+                    <!-- ----Phone- -->
+                    <div class="row mb-3">
+                      <label for="phone" class="col-sm-2 col-form-label">Phone</label>
+                      <div class="col-sm-10">
+                        <input name="phone" type="tel" class="w-100 h-100 p-2"  placeholder="Enter your phone nr" required>
+                      </div>
+                    </div>
+                    <!-- --email-- -->
+                    <div class="row mb-3">
+                      <label for="email" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input name="email" type="email" class="w-100 h-100 p-2"  placeholder="Enter your registered email" required>
+                      </div>
+                    </div>
+                    <!-- --password-- -->
+                    <div class="row mb-3">
+                      <label for="password" class="col-sm-2 col-form-label" >Password</label>
+                      <div class="col-sm-10">
+                        <input name="password" type="password" class="w-100 h-100 p-2"  placeholder="Password" required>
+                      </div>
+                    </div>
+                    <!-- --Qualification-- -->
+                    <div class="row mb-3">
+                      <label for="education" class="col-sm-2 col-form-label">Education</label>
+                      <div class="col-sm-10">
+                        <select name="education" class="w-100 h-100 p-2" aria-label="Default select " id="education">
+                            <option selected>Qualification</option>
+                            <option value="BE in CSE/ISE">BE in CSE/ISE</option>
+                            <option value="Bsc CS">Bsc in comp sc.</option>
+                            <option value="others">others</option>
+                          </select>
+                      </div>
+                    </div>
+                    <!-- --Intern design-- -->
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Applying For</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="design" id="gridRadios1" value="Fullstack Development (MERN, MEAN)" checked>
+                                <label class="form-check-label" for="design1">
+                                    Fullstack Development (MERN, MEAN)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="design" id="gridRadios2" value="Artificial Inteligence (Python)">
+                                <label class="form-check-label" for="design2">
+                                    Artificial Inteligence     (Python)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="design" id="gridRadios3" value="Mobile App dev (Java,Kotlin)">
+                                <label class="form-check-label" for="design3">
+                                    Mobile App dev      (Java,Kotlin)
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+    
+                    <!-- --Applicant view-- -->
+                    <div class="row mb-3">
+                      <label for="userView" class="col-sm-2 col-form-label">Why do you need this job?</label>
+                      <div class="col-sm-10">
+                        <div class="form-floating">
+                            <textarea name="userView" class="w-100 h-100 px-3" placeholder="Your answer decides your worth" id="floatingTextarea2" style="height: 100px"></textarea>
+                            <!-- <label for="floatingTextarea2">Comments</label> -->
+                          </div>
+                      </div>
+                    </div>
+                    
+                    <div class="container d-flex justify-content-center">
+                        <button  type="submit" id="submitBtn2" class="btn  btn-sm  customBtn w-25 h-25 mb-4">Apply Now</button>
+                    </div>
+    
+    
+                  </form>
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            </div>
+          </div>
+       </div>
+
+
+       <%- include('footer'); -%>    
+       
+       <script src="js/nav.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

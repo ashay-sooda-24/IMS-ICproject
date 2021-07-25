@@ -1,0 +1,248 @@
+:root{
+    --body-bg: #ede8e5;
+    --main-nav-color: rgba(106, 24, 24, 0.88);
+    --main-font-color: white;
+    --userInput-box: rgba(106, 24, 24, 66%);
+    --btn-bg:rgb(22, 22, 22);
+}
+
+body{
+    background-color: var(--body-bg);
+}
+
+
+.nav-bg-red{
+    background-color: var(--main-nav-color);
+    /* height: 10vh; */
+}
+.secodary-font-color{
+    color:rgb(28, 25, 83); ;
+}
+.ternary-font-color{
+    color:rgba(38, 35, 100, 0.863); ;
+}
+
+.main-font{
+    color: var(--main-font-color);
+}
+
+#logo{
+    filter: invert();
+    border-radius: 200%;
+}
+
+.navbarlist li a:hover{
+    color: white;
+    border-bottom: 0.1px solid white;
+}
+
+.activelink{
+    border-bottom: 2px solid white;
+}
+
+.pics{
+    width: 100%;
+    height: 110vh;
+    position: absolute
+}
+.pics img{
+    width: 100%;
+    height: 100%;
+
+}
+.myfade{
+    animation-name:myfade;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+@keyframes myfade {
+    from{opacity: .4}
+    to{opacity: 1}
+} 
+
+.mainBox{
+    /* height: 75vh; */
+    position: relative;
+    top: 15vh;
+}
+.userInputBox{
+    background-color: var(--userInput-box);
+}
+.customBtn{
+    background-color: var(--btn-bg);
+    color: var(--main-font-color);
+    border: none;
+    border-radius: 22px;
+}
+.customBtn:hover{
+    color: var(--main-font-color);
+    box-shadow: 2px 4px 15px 0px black;
+}
+
+#formCard{
+    box-shadow: 0px 47px 184px -95px;
+}
+
+
+.signUpBox div input{
+    box-shadow: 6px 5px 15px 0 inset;
+    border: none;
+    border-radius: 200px;
+}
+input,select,textarea{
+    box-shadow: 4px 5px 15px -2px inset;
+    border: none;
+    border-radius: 200px;
+}
+
+#leftArrow{
+    position: absolute;
+    left: 8px;
+    top: 20px;
+    width:fit-content;
+    /* left: 10px; */
+    /* border: 2px solid green; */
+}
+#leftArrow img{
+    filter: invert();
+}
+#leftArrow img:hover{
+    /* filter: invert(); */
+    transform: scale(1.5)
+}
+/* #signUpAlert{
+    width: 90%;
+    position: absolute !important;
+    top: 5vh;
+    display: none;
+} */
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: -10vh;
+    /* top: 15vh; */
+    height: 10vh;
+}
+
+#coroselImage1, #coroselImage2,#coroselImage3{
+    height: 90vh;
+}
+
+.card-img {
+    height: 30vh;
+    object-fit: cover;
+}
+
+#mediaLinks a img{
+    filter: invert();
+    height: 20px;
+}
+
+#aboutWall{
+    background: url('../img/aboutWallpaper.jpg') center center/cover;
+   clip-path: polygon(0 0, 1600px 0, 1600px 80%, 0 100%);
+}
+
+#partners div img{
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.person{
+    /* border: 2px solid red; */
+    height: 20vh;
+    width: 9vw;
+    border-radius: 120px;
+}
+.person img{
+    height: 100%;
+    width: 100%;
+    border-radius: 120px;
+    object-fit: cover;
+}
+.person1Desc{
+    width: 70%;
+}
+.feedbackCard{
+    /* border: 5px solid red; */
+    box-shadow: 1px 2px 56px -12px grey;
+    padding: 2%;
+}
+
+
+
+
+@media only screen and (min-width: 600px){
+    .pics{
+        width: 100%;
+        height: 90vh;
+        position: absolute
+    }
+    .userInputBox{
+        width: 80vh;
+        height: auto;
+    }
+    .userInputBox div a{
+        width: 50vh;
+        margin-bottom: 4%;
+    }
+    .mainBox{
+        height: 75vh;
+        position: relative;
+        top: 10vh;
+    }
+    /* #signUpAlert{
+        width: 90%;
+        position: absolute !important;
+        top: 8vh;
+        display: none;
+    } */
+    footer{
+        position: relative;
+        width: 100%;
+        bottom: 0;
+        top: 15vh;
+        height: 10vh;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #successimg{
+        position: absolute;
+        z-index: -1;
+        opacity: 0.3;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hover{
+    border-bottom: 2px solid white;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

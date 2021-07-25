@@ -1,0 +1,79 @@
+<%- include('header'); -%>
+
+<!-- ---------------Rendering table for admin page------------------------------ -->
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 50vh;  margin-top: 10vh;">
+        
+    <div class="card " max-width: 100%; " >
+        
+        <div class="container" style="overflow-x:scroll;">
+
+            <table id="myTable"   class=" table ">
+                
+                    <thead>
+                        <tr>
+                            <th>#id</th>
+                            <th>name</th>
+                            <th>phone</th>
+                            <th>email</th>
+                            <th>education</th>
+                            <th>design</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody id="status">
+                        <% if(data.length!=0){
+                            let i=1; data.forEach(function(data){%>
+                                <tr class="">
+                                    <td><%=i; %></td>
+                                    <td><%=data.name %></td>
+                                    <td><%=data.phone %></td>
+                                    <td><%=data.email %></td>
+                                    <td><%=data.education %></td>
+                                    <td><%=data.design %></td>
+                                    <td id="valueStatus">
+                                        <% if(data.status == 0){
+                                        %>Hold<%
+                                    }else if(data.status == "selected"){
+                                        %>Selected<% 
+                                    }else {
+                                        %>Rejected<%
+                                    }%>%>
+                                      </td>
+                                    
+                                </tr>
+                                <% i++;
+                            }) %> <% 
+                        }else {
+                            %> <tr>
+                                <td colspan="9">No data Found</td>
+                            </tr><%
+                        }%>
+                    </tbody>
+                </table>
+        </div>
+        
+        
+    </div>
+</div>
+
+<%- include('footer'); -%>
+
+<script src="js/nav.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+type="text/javascript"
+charset="utf8"
+src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#myTable").DataTable();
+    });
+    
+    </script>
+    <script src="js/admin.js"></script>
+    
+  </body>
+</html>

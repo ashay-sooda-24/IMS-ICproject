@@ -1,0 +1,103 @@
+<%- include('header'); -%>
+
+        <!-- -------The image slider------------------>
+        <div class="slides-container">
+            <div class="pics myfade">
+              <img src="img/img1.jpg" alt="" srcset="" />
+            </div>
+            <div class="pics myfade">
+              <img src="img/img2.jpg" alt="" srcset="" />
+            </div>
+            <div class="pics myfade">
+              <img src="img/img3.jpg" alt="" srcset="" />
+            </div>
+      </div> 
+      
+      <!-- <div class="container-fluid d-flex justify-content-center">
+        <div class="alert alert-warning alert-dismissible fade show" id="signUpAlert" role="alert">
+          <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+      </div> -->
+  
+          
+          
+      <!-- -------Centeral Input box (Sign Up)----------     -->
+      <div class="container mainBox  d-flex align-items-center justify-content-center" >
+          <div class="card text-center h-auto userInputBox main-font" >
+            <div class="back-button d-flex">
+                <a href="/index" id="leftArrow">
+                  <img src="https://img.icons8.com/material-rounded/24/000000/long-arrow-left.png"/>
+                </a>
+              </div>
+          <div class="card-body mt-3">
+            <h5 class="card-title">Sign Up</h5>
+            <p class="card-text">Please Enter your credentials</p>
+          </div>
+          <div class="container">
+  
+              <form action="signup" method="post" class="signUpBox" >
+                  <div class="row mb-3">
+                    <label for="name" class="col-sm-3 col-form-label">Name:</label>
+                    <div class="col-sm-9">
+                      <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="phone" class="col-sm-3 col-form-label">Phone:</label>
+                    <div class="col-sm-9">
+                      <input type="number" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="inputPassword3" class="col-sm-3 col-form-label">Email:</label>
+                    <div class="col-sm-9">
+                      <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="password" class="col-sm-3 col-form-label">Password:</label>
+                    <div class="col-sm-9">
+                      <input type="password" name="password" id="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <label for="confirmPassword" class="col-sm-3 col-form-label">confirm password:</label>
+                    <div class="col-sm-9">
+                      <input type="password" onkeyup="check()" name="confirmPassword" id="cpassword" class="form-control" placeholder="Renter your password" required>
+                      <!-- <span id="message"></span> -->
+                      <div class="valid-feedback " style="color: rgb(57, 250, 57);">
+                        Passwords Matching
+                      </div>
+                      <div  class="invalid-feedback">
+                        Passwords not matching
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container d-flex flex-column">
+                    <button  type="submit" id="submitBtn" class="btn  btn-sm  customBtn w-25 mt-4 mx-auto">Sign in</button>
+                    <a href="/login" class="mx-auto">Already have an account?Login</a>
+                  </div>
+                </form>
+  
+  
+  
+            <!-- <a href="Signup.html" class="btn  btn-sm  customBtn">Sign Up</a> -->
+          </div>
+  
+        </div>
+      </div>
+  
+      <!-- ----------Footer section----------- -->
+      <footer class="d-flex justify-content-center align-items-center bg-dark">
+        <div class="container-fluid text-center  bg-dark main-font" >
+          Copyright &copy; All Right Reserved 2021, Hover On Tech Pvt. Ltd.
+        </div>
+      </footer>
+  
+      
+      
+      <script src="js/index.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+  </html>

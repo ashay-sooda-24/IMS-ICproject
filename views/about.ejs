@@ -1,0 +1,103 @@
+<%- include('header'); -%>
+
+<!-- -------------The corosel of Home Page----------- -->
+<div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel" >
+        
+    <div class="carousel-indicators " >
+     
+      <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/embededSystems.jpg" id="coroselImage1" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>The World of Embeded Systems</h3>
+          <p>Best Products for the corporate  World</p>
+        </div>
+      </div>
+      <div class="carousel-item"> 
+        <img src="img/internship.jpg" id="coroselImage2" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Student Internship Programs</h3>
+          <p>Build Learn and Grow with the company. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/machineLearning.jpg" id="coroselImage3" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Growing AI technologies</h3>
+          <p>The world drifts towards the era of the Artificial Inteligence!! So do we!</p>
+        </div>
+      </div> 
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- ---------Company Insight---------   -->
+<div class="container mt-4 text-center userInputBox p-5 main-font" style="max-width: 85vh;">
+  <span class="badge nav-bg-red  main-font mb-3"><h2>Hover On </h2></span><h5 style="font-size: larger; font-weight: bold;"> Steppin in towards innovation and future</h5>
+  <h6 class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus quaerat doloremque cum error distinctio vitae quibusdam qui obcaecati, ab nesciunt mollitia, beatae esse. Quaerat facilis reprehenderit ipsum beatae illum.</h6>
+  <a href="/about" class="btn customBtn mt-3">Know more</a>
+</div>  
+
+
+<!-- ---------Cardss----------- -->
+<div class="container mt-5 ">
+ <div class="container text-center mb-4">
+   <h2>Student Internship Programs</h2>
+ </div>
+
+ <div class="row ">
+   <div class="col-sm-12 col-md-4 text-center">
+     <div class="card nav-bg-red main-font" >
+       <img src="img/fullstack.jpg" class="card-img-top card-img" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Fullstack Development</h4>
+         <p class="card-text">Buil websites and maintain websites in a working environment and polish your skills.</p>
+         <a href="/apply" class="btn customBtn">Apply Now</a>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-12 col-md-4 text-center">
+     <div class="card nav-bg-red main-font" >
+       <img src="img/Ai.jpg" class="card-img-top card-img" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Artificial Inteligence</h4>
+         <p class="card-text">Grow as you learn more and more and dive into the world of AI.</p>
+         <a href="/apply" class="btn customBtn">Apply Now</a>
+       </div>
+     </div>
+   </div>
+   <div class="col-sm-12 col-md-4 text-center">
+     <div class="card nav-bg-red main-font" >
+       <img src="img/mobileDev.jpg" class="card-img-top card-img" alt="...">
+       <div class="card-body">
+         <h4 class="card-title">Mobile App dev.</h4>
+         <p class="card-text">As android becomes popular, We provide students an opportunity to learn and improve their skills</p>
+         <a href="/apply" class="btn customBtn">Apply Now</a>
+       </div>
+     </div>
+   </div>
+ </div>
+
+</div>
+
+<%- include('footer'); -%>
+
+<script src="js/nav.js"></script>
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<!-- <script src="js/index.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
